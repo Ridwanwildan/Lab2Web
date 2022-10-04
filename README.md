@@ -45,3 +45,36 @@ sudah disiapkan beberapa elemen seperti header, paragraf, dan juga hyperlink.
 Setelah selesai dibuat dan disimpan, jalankan file HTML pada web browser dan lihat hasilnya.            
 
 ![Gambar 1](Screenshoots/Capture1.PNG)      
+
+## Mendeklarasikan CSS Internal
+
+Setelah membuat file HTML, selanjutnya adalah mendeklarasikan CSS secara internal        
+pada bagian `<head>` file HTML. Untuk menambahkan internal CSS maka perlu menggunakan tag `<style>`         
+barulah didalam tag `<style>` bisa menggunakan syntax CSS.           
+
+```bash
+<head>
+    <style>
+        body {
+            font-family:'Open Sans', sans-serif;
+        }
+        header {
+            min-height: 80px;
+            border-bottom:1px solid #77CCEF;
+        }
+        h1 {
+            font-size: 24px;
+            color: #0F189F;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        h1 i {
+            color:#6d6a6b;
+        }
+    </style>
+</head>
+```         
+
+Refresh web browser dan lihat hasilnya.          
+
+![Gambar 2](Screenshoots/Capture2.PNG)      
