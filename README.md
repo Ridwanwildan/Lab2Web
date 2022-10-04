@@ -80,4 +80,18 @@ dengan tebal 1px dan bergaris solid. Kemudian pada `<h1>` font size nya sudah di
 dengan warna biru juga. Ditambah juga dengan jarak padding dan `<h1>` italic diubah warnanya menjadi      
 abu abu.              
 
-![Gambar 2](Screenshoots/Capture2.PNG)      
+![Gambar 2](Screenshoots/Capture2.PNG)       
+
+## Menambahkan Inline CSS
+
+Inline CSS adalah menambahkan CSS langsung pada setiap elemen di file HTML. Caranya adalah menambahkan        
+atribut `style` pada elemen HTML dan syntax CSS bisa ditambahkan didalamnya.           
+
+```bash
+<p style="text-align: center; color: #ccd8e4;">
+```         
+
+Refresh web browser dan lihat hasilnya. Warna dari elemen paragraf sudah berubah dan teks menjadi       
+rata tengah.                  
+
+![Gambar 3](Screenshoots/Capture3.PNG)       
