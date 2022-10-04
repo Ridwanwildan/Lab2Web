@@ -95,3 +95,43 @@ Refresh web browser dan lihat hasilnya. Warna dari elemen paragraf sudah berubah
 rata tengah.                  
 
 ![Gambar 3](Screenshoots/Capture3.PNG)       
+
+## Membuat CSS Eksternal
+
+untuk membuat CSS eksternal caranya adalah membuat file `.css` yang baru dan terpisah dari file     
+HTML yang sudah dibuat. File CSS yang akan dibuat diberi penamaan bebas, disini nama filenya       
+adalah `style_eksternal.css`. Setelah file CSS dibuat, deklarasikan CSS seperti ini :          
+
+```bash
+nav {
+    background: #20A759;
+    color:#fff;
+    padding: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding:10px 20px;
+}
+nav .active,
+nav a:hover {
+    background: #0B6B3A;
+}
+```         
+
+Setelah itu, perlu tambahkan tag `<link>` didalam tag `<head>` file HTML yang sudah ada.         
+Nama file pada atribut href disesuaikan dengan nama file CSS yang sudah dibuat.           
+
+```bash
+<head>
+    <!-- menyisipkan css eksternal -->
+    <link rel="stylesheet" href="style_eksternal.css" type="text/css">
+</head>
+```         
+
+Simpan file CSS kemudian refresh browser dan lihat hasilnya. Terlihat elemen Nav sudah berubah warna      
+menjadi hijau dan tidak ada lagi underline pada teks hyperlink karena text-decoration sudah      
+diubah ke none. Warna pada saat hover mouse kearah hyperlink pun bisa berubah karena sudah deklarasi      
+hover background.                
+
+![Gambar 4](Screenshoots/Capture4.PNG)       
