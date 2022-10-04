@@ -75,6 +75,9 @@ barulah didalam tag `<style>` bisa menggunakan syntax CSS.
 </head>
 ```         
 
-Refresh web browser dan lihat hasilnya.          
+Refresh web browser dan lihat hasilnya. Dibawah elemen header terdapat border berwarna biru          
+dengan tebal 1px dan bergaris solid. Kemudian pada `<h1>` font size nya sudah diubah menjadi 24px    
+dengan warna biru juga. Ditambah juga dengan jarak padding dan `<h1>` italic diubah warnanya menjadi      
+abu abu.              
 
 ![Gambar 2](Screenshoots/Capture2.PNG)      
