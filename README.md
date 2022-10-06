@@ -193,10 +193,57 @@ pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini.
 
 2. Apa perbedaan pendeklarasian CSS elemen `h1 {...}` dengan `#intro h1 {...}` ? berikan penjelasannya!         
 
+deklarasi pada `h1 {...}` akan tertuju pada seluruh elemen dengan tag `<h1>`, sedangkan jika deklarasi        
+dengan `#intro h1 {...}` akan tertuju pada tag dengan id `#intro` yang memiliki `<h1>` didalamnya.         
+
 3. Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS         
 pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser?           
 Berikan penjelasan dan contohnya!          
 
-4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut terdapat        
-deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan          
-dan contohnya! `<p id="paragraf-1" class="text-paragraf">`         
+Deklarasi yang akan ditampilkan adalah inline CSS. Prioritas kedua eksternal CSS dan terakhir        
+internal CSS. Contohnya jika seperti ini :              
+
+```bash
+<html>
+    <head>
+    <link rel="stylesheet" href="style_eksternal.css" type="text/css">
+    </head>
+    <style>
+        p {
+                color: green;
+            }
+    </style>
+    <body>
+        <p style="color: red;">
+        </p>
+    </body>
+```          
+
+Maka paragraf tersebut akan berwarna merah.         
+
+4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing       
+selector tersebut terdapat deklarasi CSS, maka deklarasi manakah yang akan     
+ditampilkan pada browser? Berikan penjelasan dan contohnya!        
+`<p id="paragraf-1" class="text-paragraf">`         
+
+Deklarasi yang akan ditampilkan adalah deklarasi yang menggunakan selector id.      
+Contoh :       
+
+```bash
+<head>
+    <style>
+        #paragraf-1 {
+            color:blueviolet;
+        }
+
+        .text-paragraf {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragraf-1" class="text-paragraf">
+        tes
+    </p>
+</body>
+```          
