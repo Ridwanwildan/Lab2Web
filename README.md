@@ -7,6 +7,15 @@
 
 Dalam latihan menggunakan CSS ini, saya menggunakan [Google Chrome](https://www.google.com/intl/id_id/chrome/) sebagai web browser dan [visual studio code](https://code.visualstudio.com/) sebagai teks editornya.       
 
+Daftar isi :          
+* [Membuat Dokumen HTML](https://github.com/Ridwanwildan/Lab2Web#membuat-dokumen-html)         
+* [Mendeklarasikan CSS Internal](https://github.com/Ridwanwildan/Lab2Web#mendeklarasikan-css-internal)         
+* [Menambahkan Inline CSS](https://github.com/Ridwanwildan/Lab2Web#menambahkan-inline-css)         
+* [Membuat CSS Eksternal](https://github.com/Ridwanwildan/Lab2Web#membuat-css-eksternal)         
+* [Menambahkan CSS Selector](https://github.com/Ridwanwildan/Lab2Web#menambahkan-css-selector)         
+* [Pertanyaan dan Tugas](https://github.com/Ridwanwildan/Lab2Web#pertanyaan-dan-tugas)         
+
+
 ## Membuat Dokumen HTML
 
 Hal pertama yang harus disiapkan adalah membuat file HTML dasar. Pada file HTML ini juga         
@@ -215,6 +224,7 @@ internal CSS. Contohnya jika seperti ini :
     </style>
     <body>
         <p style="color: red;">
+            tes
         </p>
     </body>
 ```          
