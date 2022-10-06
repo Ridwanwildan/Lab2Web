@@ -135,3 +135,54 @@ diubah ke none. Warna pada saat hover mouse kearah hyperlink pun bisa berubah ka
 hover background.                
 
 ![Gambar 4](Screenshoots/Capture4.PNG)       
+
+## Menambahkan CSS Selector
+
+Untuk menambahkan CSS Selector, caranya adalah menambahkan id atau class selectornya       
+terlebih dahulu pada elemen HTML yang akan dipilih. Sebelumnya sudah ditambahkan id dan class yang         
+diberi nama `#intro`, `.button`, dan `.btn-primary`. Seperti ini :         
+
+```bash
+<div id="intro"></div>
+<a class="button btn-primary"></a>
+```         
+
+Pada file HTML, selector id hanya bisa ditambahkan 1 kali saja, berbeda dengan selector class       
+yang bisa ditambahkan berkali-kali. selector id ditandai dengan simbol `#` didepan nama selectornya.        
+Sedangkan selector class ditandai dengan simbol `.` didepan nama selectornya.      
+
+Selanjutnya adalah menambahkan code CSS nya. Bisa ditambahkan ke internal, inline, maupun eksternal.       
+Namun kali ini CSS selector akan ditambahkan kedalam eksternal CSS yaitu pada file `style_eksternal.css`.          
+
+```bash
+/* ID Selector */
+#intro {
+    background: #418fb1;
+    border: 1px solid #099249;
+    min-height: 100px;
+    padding: 10px;
+}
+#intro h1 {
+    text-align: left;
+    border: 0;
+    color: #fff;
+}
+
+/* Class Selector */
+.button {
+    padding: 15px 20px;
+    background: #bebcbd;
+    color: #fff;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+}
+.btn-primary {
+    background: #E42A42;
+}
+```         
+
+Save kemudian refresh web browser dan lihat hasilnya.          
+
+![Gambar 5](Screenshoots/Capture5.PNG)       
+
